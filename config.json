@@ -1,0 +1,84 @@
+{
+  "name": "SleepWake",
+  "version": "1.0.0",
+  "description": "Windows定时唤醒脚本 - 支持睡眠和休眠模式的自动唤醒功能",
+  "author": "Herselfta",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/SleepWake.git"
+  },
+  "keywords": [
+    "windows",
+    "sleep",
+    "wake",
+    "timer",
+    "powershell",
+    "automation",
+    "scheduled-task"
+  ],
+  "systemRequirements": {
+    "os": "Windows 10/11",
+    "powershell": "5.1+",
+    "privileges": "Administrator"
+  },
+  "features": {
+    "wakeModes": [
+      "minutes",
+      "hours", 
+      "specificTime",
+      "scheduledDate"
+    ],
+    "sleepModes": [
+      "sleep",
+      "hibernate"
+    ],
+    "autoOptimizations": [
+      "wakeTimers",
+      "permissions",
+      "validation"
+    ]
+  },
+  "compatibility": {
+    "windows": {
+      "10": "supported",
+      "11": "supported"
+    },
+    "environments": {
+      "docker": "optimized",
+      "hyperv": "supported",
+      "vmware": "limited"
+    }
+  },
+  "defaultSettings": {
+    "taskName": "SystemAutoWake",
+    "defaultSleepMode": "sleep",
+    "autoCloseWindow": true,
+    "enableDiagnostics": true
+  },
+  "installation": {
+    "defaultPath": "C:\\SleepWake",
+    "createShortcuts": true,
+    "requireAdmin": true
+  },
+  "troubleshooting": {
+    "commonIssues": [
+      {
+        "issue": "无法唤醒",
+        "solutions": [
+          "检查BIOS RTC Alarm设置",
+          "使用睡眠模式而非休眠",
+          "运行系统诊断"
+        ]
+      },
+      {
+        "issue": "权限不足",
+        "solutions": [
+          "以管理员身份运行",
+          "检查UAC设置",
+          "手动提升权限"
+        ]
+      }
+    ]
+  }
+}

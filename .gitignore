@@ -1,0 +1,55 @@
+# PowerShell脚本和Windows相关文件
+*.ps1.bak
+*.ps1.old
+*.ps1.tmp
+
+# 日志文件
+*.log
+*.txt.log
+
+# 临时文件
+*.tmp
+*.temp
+*~
+
+# Windows系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE和编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 备份文件
+*.bak
+*.backup
+*.old
+
+# 测试文件
+test-*.ps1
+debug-*.ps1
+
+# 用户特定文件
+user-config.ps1
+local-settings.ps1
+
+# 编译输出
+bin/
+obj/
+*.exe
+*.dll
+
+# 包管理器
+packages/
+node_modules/
+
+# 其他
+.DS_Store
+*.pid
+*.seed
+*.pid.lock
